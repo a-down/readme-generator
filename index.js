@@ -1,3 +1,23 @@
+
+// Next Steps
+// Licenses (ask Gary about)
+// Extra Prompts
+  // file location of visual
+  // deployed link
+
+// Ask Questions
+
+
+
+
+
+
+
+
+
+
+
+
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
