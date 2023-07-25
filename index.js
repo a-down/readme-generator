@@ -125,6 +125,7 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
+// Prompt asking the use if they are ready to start the application
 function init() {
   inquirer
     .prompt(
@@ -135,13 +136,14 @@ function init() {
       }
     )
     .then((response) => {
-      console.log(response.appStart)
+      // console.log(response.appStart)
       response.appStart === true ? start() : 
       (console.log('Let us know when you are ready!'),
       init())
     })
-      
 }
 
+
 // Function call to initialize app
+// Called when node index.js is called in the terminal
 init();
