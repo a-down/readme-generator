@@ -2,6 +2,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
 
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -53,63 +54,94 @@ const questions = [
 ];
 
 
-inquirer
-  .prompt(questions)
-  .then((responses) => console.log(responses));
+// run inquirer npm to get responses in the command line
+function start() {
+  inquirer
+    .prompt(questions)
+    .then((responses) => {
+      console.log(responses)
+      createReadmeContent(responses)
+    });
+}
 
 
+// function to create Readme content from the inquirer prompts (called above)
+function createReadmeContent(data) {
+  // creating variables to use in readme content
+  const {
+    projectTitle, 
+    projectDescription, 
+    projectInstallation, 
+    projectUsage, 
+    projectContributions, 
+    projectTests, 
+    projectLicense, 
+    projectGitHub, 
+    projectEmail
+  } = data;
+  console.log(projectTitle)
 
+  // variable with readme content
+  const readmeContent = 
+
+`# ${projectTitle}
+
+## Description
+${projectDescription}
+
+## Table of Contents
+
+## Installation
+${projectInstallation}
+
+## Usage
+${projectUsage}
+
+##License
+${projectLicense}
+
+## Contributing
+${projectContributions}
+
+## Tests
+${projectTests}
+
+## Questions
+Please visit [https://github.com/${projectGitHub}](https://github.com/${projectGitHub}) for my GitHub profile.
+
+Please contact me at [${projectEmail}](${projectEmail}) if you have any questions about the application.
+`
+  // runs writeToFile function to the name of 'README.md with readmeContent from above 
+  writeToFile('README2.md', `${readmeContent}`)
+  }
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (error) => 
+  error ? console.log('Try again!') : console.log('Success!'))
+}
+
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer
+    .prompt(
+      {
+        type: 'confirm',
+        message: 'Are you ready to start creating your README?',
+        name: 'appStart',
+      }
+    )
+    .then((response) => {
+      console.log(response.appStart)
+      response.appStart === true ? start() : 
+      (console.log('Let us know when you are ready!'),
+      init())
+    })
+      
+}
 
 // Function call to initialize app
 init();
-
-
-
-
-
-// what is your project title
-
-// "Description"
-// Enter description
-
-// "Installation"
-// Installation instructions
-  // are there any?
-  // enter if so
-
-// "Usage"
-// Usage Information
-  // does the user need usage instructions
-  // enter if so
-
-// "Contributing"
-// Contribution Guidelines
-  // do you want contribution guidelines
-  // enter if so
-
-// "Tests"
-// Test Instructions
-  // do you want to provide
-  // enter if so
-
-// "License"
-// Choose a license for your project 
-  // add badge to top
-  // add description to "License" section
-
-// "Questions"
-// enter GitHub username
-  // link to github profile is created
-// enter Email
-  // added to sections with instructions on how to reach creator
-
-// "Table of Contents"
-// Add near the top when done
-// include links to the corresponding sections of the ReadMe
