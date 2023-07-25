@@ -3,6 +3,7 @@ const fs = require('fs')
 const inquirer = require('inquirer')
 
 
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -54,7 +55,9 @@ const questions = [
 ];
 
 
+
 // run inquirer npm to get responses in the command line
+// function is called with the prompt inside the init() function
 function start() {
   inquirer
     .prompt(questions)
@@ -65,8 +68,10 @@ function start() {
 }
 
 
+
 // function to create Readme content from the inquirer prompts (called above)
 function createReadmeContent(data) {
+
   // creating variables to use in readme content
   const {
     projectTitle, 
@@ -81,7 +86,7 @@ function createReadmeContent(data) {
   } = data;
   console.log(projectTitle)
 
-  // variable with readme content
+  // creates variable with content for the readme
   const readmeContent = 
 
 `# ${projectTitle}
@@ -111,9 +116,11 @@ Please visit [https://github.com/${projectGitHub}](https://github.com/${projectG
 
 Please contact me at [${projectEmail}](${projectEmail}) if you have any questions about the application.
 `
+
   // runs writeToFile function to the name of 'README.md with readmeContent from above 
   writeToFile('README2.md', `${readmeContent}`)
   }
+
 
 
 // TODO: Create a function to write README file
@@ -142,6 +149,7 @@ function init() {
       init())
     })
 }
+
 
 
 // Function call to initialize app
