@@ -149,9 +149,4 @@ function init() {
       init())
     })
 }
-
-
-
-// Function call to initialize app
-// Called when node index.js is called in the terminal
 init();
