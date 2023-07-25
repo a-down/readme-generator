@@ -1,26 +1,40 @@
 # Rory
 
 ## Description
-Rory is the best dog site.
+
 
 ## Table of Contents
 
+[Description](#description)
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[License](#license)
+
+[Contributing](#contributing)
+
+[Tests](#tests)
+
+[Questions](#questions)
+
 ## Installation
-Open website.
+
 
 ## Usage
-Look at Rory pictures.
 
-##License
-The Unlicense
+
+## License
+MIT
 
 ## Contributing
-Add Rory pictures.
+
 
 ## Tests
-Dev console.
+
 
 ## Questions
-Please visit [https://github.com/a-downing](https://github.com/a-downing) for my GitHub profile.
+Please visit [https://github.com/](https://github.com/) for my GitHub profile.
 
-Please contact me at [alec2downing@gmail.com](alec2downing@gmail.com) if you have any questions about the application.
+Please contact me at []() if you have any questions about the application.
