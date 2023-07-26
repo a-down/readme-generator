@@ -56,7 +56,7 @@ function generateTableOfContents(data) {
   const string = array.join(' ')
   console.log(string)
 
-  return `${string}`
+  return `## Table of Contents \n ${string}`
 }
 
 
