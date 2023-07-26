@@ -39,7 +39,7 @@ exports.questions = [
     type: 'list',
     message: 'Please select the license you used for the project.',
     name: 'projectLicense',
-    choices: ['MIT', 'Apache', 'Unlicense', 'CC0', 'None'],
+    choices: ['MIT', 'Apache', 'The Unlicense', 'Creative Commons Zero', 'None'],
   },
   {
     type: 'input',

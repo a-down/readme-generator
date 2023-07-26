@@ -46,13 +46,14 @@ function generateTitle(data) {
 }
 
 
+
 // function to generate license badge
 function generateLicenseBadge(data) {
   let badgeLink
   if (data === 'MIT'){badgeLink = 'https://img.shields.io/badge/License-MIT-yellow.svg'}
   if (data === 'Apache'){badgeLink = 'https://img.shields.io/badge/License-Apache_2.0-blue.svg'}
-  if (data === 'Unlicense'){badgeLink = 'https://img.shields.io/badge/license-Unlicense-blue.svg'}
-  if (data === 'CC0'){badgeLink = 'https://licensebuttons.net/l/zero/1.0/80x15.png'}
+  if (data === 'The Unlicense'){badgeLink = 'https://img.shields.io/badge/license-Unlicense-blue.svg'}
+  if (data === 'Creative Commons Zero'){badgeLink = 'https://licensebuttons.net/l/zero/1.0/80x15.png'}
   
   return (data === 'none') 
     ? '' 
