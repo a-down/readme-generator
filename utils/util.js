@@ -32,7 +32,7 @@ function generateTitle(data) {
 // function to generate most markdown sections
 function generateMarkdown(title, data) {
   return (
-    (data === '') ? '' : `${title}\n${data}`
+    (data === '') ? '' : `${title}\n${data}\n`
     )
 }
 
@@ -50,7 +50,7 @@ function generateTableOfContents(data) {
   if (data.projectContributions !== ''){array.push('[Contributions](#Contributions)\n \n')}
   if (data.projectTests !== ''){array.push('[Tests](#Tests)\n \n')}
   if (data.projectLicense !== ''){array.push('[License](#License)\n \n')}
-  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#Questions)\n \n')}
+  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#Questions)\n')}
 
   // turn the array into a string
   console.log(array)

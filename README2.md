@@ -1,7 +1,8 @@
-# pumpkin
+# rory
 
 ## Description
-pumpkin
+rory
+
 ## Table of Contents 
 [Description](#Description)
  
@@ -16,19 +17,23 @@ pumpkin
 [License](#License)
  
 [Questions](#Questions)
- 
 
 ## Installation
-pumpkin
+rory
+
 ## Usage
-pumpkin
+rory
+
 ## License
 Mozilla Public License 2.0
+
 ## Contributions
-pumpkin
+rory
+
 ## Tests
-pumpkin
+rory
+
 ## Questions
-Please visit [https://github.com/pumpkin](https://github.com/pumpkin) for my GitHub profile.
+Please visit [https://github.com/rory](https://github.com/rory) for my GitHub profile.
     
-Please contact me at [pumpkin](pumpkin) if you have any questions about the application.
+Please contact me at [rory](rory) if you have any questions about the application.
