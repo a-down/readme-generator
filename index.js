@@ -49,22 +49,7 @@ function createReadmeContent(data) {
 
 `${util.title(data.projectTitle)}
 ${util.markdown('## Description', projectDescription)}
-## Table of Contents
-
-[Description](#description)
-
-[Installation](#installation)
-
-[Usage](#usage)
-
-[License](#license)
-
-[Contributing](#contributing)
-
-[Tests](#tests)
-
-[Questions](#questions)
-
+${util.contents('## Table of Contents', data)}
 ${util.markdown('## Installation', projectInstallation)}
 ${util.markdown('## Usage', projectUsage)}
 ${util.markdown('## License', projectLicense)}

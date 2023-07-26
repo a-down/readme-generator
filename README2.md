@@ -1,40 +1,39 @@
-# Rory
+# rory
 
 ## Description
-dog
+rory
 
-## Table of Contents
-
-[Description](#description)
-
-[Installation](#installation)
-
-[Usage](#usage)
-
-[License](#license)
-
-[Contributing](#contributing)
-
-[Tests](#tests)
-
-[Questions](#questions)
+[Description](#Description)
+ 
+ [Installation](#Installation)
+ 
+ [Usage](#Usage)
+ 
+ [Contributions](#Contributions)
+ 
+ [Tests](#Tests)
+ 
+ [License](#License)
+ 
+ [Questions](#Questions)
+ 
 
 ## Installation
-cmd
+rory
 
 ## Usage
-use
+rory
 
 ## License
-Creative COmmons Zero
+Mozilla Public License 2.0
 
 ## Contributions
-no
+rory
 
 ## Tests
-npm test
+rory
 
 ## Questions
-Please visit [https://github.com/a-down](https://github.com/a-down) for my GitHub profile.
+Please visit [https://github.com/rory](https://github.com/rory) for my GitHub profile.
     
-Please contact me at [alec@email.com](alec@email.com) if you have any questions about the application.
+Please contact me at [rory](rory) if you have any questions about the application.

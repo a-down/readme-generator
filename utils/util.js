@@ -27,6 +27,8 @@ function generateTitle(data) {
   return `# ${data}\n`;
 }}
 
+
+// function to generate regular markdown sections
 function generateMarkdown(title, data) {
   if (data === '') {
     return ''
@@ -36,6 +38,59 @@ ${data}
 `
 }}
 
+
+// function to generate table of contents markdown
+function generateTableOfContents(data) {
+  console.log(data)
+  const array = []
+
+  if (data.projectDescription !== ''){array.push('[Description](#Description)\n \n')}
+  if (data.projectInstallation !== ''){array.push('[Installation](#Installation)\n \n')}
+  if (data.projectUsage !== ''){array.push('[Usage](#Usage)\n \n')}
+  if (data.projectContributions !== ''){array.push('[Contributions](#Contributions)\n \n')}
+  if (data.projectTests !== ''){array.push('[Tests](#Tests)\n \n')}
+  if (data.projectLicense !== ''){array.push('[License](#License)\n \n')}
+  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#Questions)\n \n')}
+
+  console.log(array)
+  const string = array.join(' ')
+  console.log(string)
+
+  return `${string}`
+}
+
+
+// projectTitle, 
+// projectDescription, 
+// projectInstallation, 
+// projectUsage, 
+// projectContributions, 
+// projectTests, 
+// projectLicense, 
+// projectGitHub, 
+// projectEmail
+
+
+// ## Table of Contents
+
+// [Description](#description)
+
+// [Installation](#installation)
+
+// [Usage](#usage)
+
+// [License](#license)
+
+// [Contributing](#contributing)
+
+// [Tests](#tests)
+
+// [Questions](#questions)
+
+
+
+
+// function to generate markdown in questions sections
 function generateQuestions(title, data, data2) {
   if (data === '' && data2 === '') {
     return ''
@@ -47,8 +102,8 @@ function generateQuestions(title, data, data2) {
     return `${title}\nPlease visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.
     
 Please contact me at [${data2}](${data2}) if you have any questions about the application.`
-
 }}
+
 
 function testRequire() {
   console.log('it works!!!')
@@ -59,6 +114,7 @@ module.exports = {
   testRequire: testRequire,
   markdown: generateMarkdown,
   questions: generateQuestions,
+  contents: generateTableOfContents,
 }
 
 
