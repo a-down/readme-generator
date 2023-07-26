@@ -73,14 +73,14 @@ function generateMarkdown(title, data) {
 // function to generate license section and license link
 function generateLicenseLink(title, data) {
   let licenseLink
-  if (data === 'MIT'){licenseLink = 'https://img.shields.io/badge/License-MIT-yellow.svg'}
-  if (data === 'Apache'){licenseLink = 'https://img.shields.io/badge/License-Apache_2.0-blue.svg'}
-  if (data === 'The Unlicense'){licenseLink = 'https://img.shields.io/badge/license-Unlicense-blue.svg'}
-  if (data === 'Creative Commons Zero'){licenseLink = 'https://licensebuttons.net/l/zero/1.0/80x15.png'}
+  if (data === 'MIT'){licenseLink = 'https://opensource.org/licenses/MIT'}
+  if (data === 'Apache'){licenseLink = 'https://opensource.org/licenses/Apache-2.0'}
+  if (data === 'The Unlicense'){licenseLink = 'http://unlicense.org/'}
+  if (data === 'Creative Commons Zero'){licenseLink = 'http://creativecommons.org/publicdomain/zero/1.0/'}
 
   return (data === 'none') 
     ? '' 
-    : `${title}\nI am using the [${data} License](${licenseLink})`
+    : `${title}\nI am using the [${data}](${licenseLink}) License.`
 }
 
 
@@ -88,20 +88,20 @@ function generateLicenseLink(title, data) {
 // function to generate table of contents markdown
 function generateTableOfContents(data) {
   console.log(data)
-  const array = []
+  const arr = []
 
   // push the sections that are needed in the readme into an array
-  if (data.projectDescription !== ''){array.push('[Description](#description)\n \n')}
-  if (data.projectInstallation !== ''){array.push('[Installation](#installation)\n \n')}
-  if (data.projectUsage !== ''){array.push('[Usage](#usage)\n \n')}
-  if (data.projectContributions !== ''){array.push('[Contributions](#contributions)\n \n')}
-  if (data.projectTests !== ''){array.push('[Tests](#tests)\n \n')}
-  if (data.projectLicense !== ''){array.push('[License](#license)\n \n')}
-  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#questions)\n')}
+  if (data.projectDescription !== ''){arr.push('[Description](#description)\n \n')}
+  if (data.projectInstallation !== ''){arr.push('[Installation](#installation)\n \n')}
+  if (data.projectLicense !== ''){arr.push('[License](#license)\n \n')}
+  if (data.projectUsage !== ''){arr.push('[Usage](#usage)\n \n')}
+  if (data.projectContributions !== ''){arr.push('[Contributions](#contributions)\n \n')}
+  if (data.projectTests !== ''){arr.push('[Tests](#tests)\n \n')}
+  if (data.projectGitHub !== '' || data.projectEmail !== ''){arr.push('[Questions](#questions)\n')}
 
   // turn the array into a string
-  console.log(array)
-  const string = array.join('')
+  console.log(arr)
+  const string = arr.join('')
   console.log(string)
 
   // return the string to index.js

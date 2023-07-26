@@ -45,6 +45,7 @@ exports.questions = [
     type: 'input',
     message: 'Enter your GitHub username.',
     name: 'projectGitHub',
+    default: '',
   },
   {
     type: 'input',

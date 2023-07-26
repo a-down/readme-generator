@@ -1,13 +1,13 @@
 # rory
 
-![GitHub License](https://img.shields.io/badge/license-Unlicense-blue.svg)
-## Description
-rory
+![GitHub License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents 
 [Description](#description)
  
 [Installation](#installation)
+ 
+[License](#license)
  
 [Usage](#usage)
  
@@ -15,25 +15,12 @@ rory
  
 [Tests](#tests)
  
-[License](#license)
- 
 [Questions](#questions)
 
-## Installation
-rory
 
-## Usage
-rory
 
 ## License
-I am using the [The Unlicense License](https://img.shields.io/badge/license-Unlicense-blue.svg)
-## Contributions
-rory
+I am using the [MIT](https://opensource.org/licenses/MIT) License.
 
-## Tests
-rory
 
-## Questions
-Please visit [https://github.com/rory](https://github.com/rory) for my GitHub profile.
-    
-Please contact me at [rory](rory) if you have any questions about the application.
+
