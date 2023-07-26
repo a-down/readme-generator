@@ -1,12 +1,13 @@
-# oreo
+# f
 
+![GitHub License](https://licensebuttons.net/l/zero/1.0/80x15.png)
 ## Description
-oreo
+f
 
 ## Table of Contents 
 [Description](#description)
  
-[Installation](#dnstallation)
+[Installation](#installation)
  
 [Usage](#usage)
  
@@ -19,21 +20,21 @@ oreo
 [Questions](#questions)
 
 ## Installation
-oreo
+f
 
 ## Usage
-oreo
+f
 
 ## License
-Mozilla Public License 2.0
+CC0
 
 ## Contributions
-oreo
+f
 
 ## Tests
-oreo
+f
 
 ## Questions
-Please visit [https://github.com/oreo](https://github.com/oreo) for my GitHub profile.
+Please visit [https://github.com/f](https://github.com/f) for my GitHub profile.
     
-Please contact me at [oreo](oreo) if you have any questions about the application.
+Please contact me at [f](f) if you have any questions about the application.

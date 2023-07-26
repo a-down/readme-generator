@@ -19,12 +19,44 @@ function testRequire() {
 
 
 
+const licenseBadges = {
+  MIT: 'https://img.shields.io/badge/License-MIT-yellow.svg',
+  Apache: {
+    link: 'https://opensource.org/licenses/Apache-2.0',
+    badge: 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
+  },
+  Unlicense: {
+    link: 'http://unlicense.org/',
+    badge: 'https://img.shields.io/badge/license-Unlicense-blue.svg',
+  },
+  CC0: {
+    link: 'http://creativecommons.org/publicdomain/zero/1.0/',
+    badge: 'https://licensebuttons.net/l/zero/1.0/80x15.png',
+  },
+}
+
+
+
 // TODO: Create a function to generate markdown for README
-// functions to generate title section of markdown
+// function to generate title section of markdown
 function generateTitle(data) {
   return (
     (data === '') ? '' : `# ${data}\n`
     )
+}
+
+
+// function to generate license badge
+function generateLicenseBadge(data) {
+  let badgeLink
+  if (data === 'MIT'){badgeLink = 'https://img.shields.io/badge/License-MIT-yellow.svg'}
+  if (data === 'Apache'){badgeLink = 'https://img.shields.io/badge/License-Apache_2.0-blue.svg'}
+  if (data === 'Unlicense'){badgeLink = 'https://img.shields.io/badge/license-Unlicense-blue.svg'}
+  if (data === 'CC0'){badgeLink = 'https://licensebuttons.net/l/zero/1.0/80x15.png'}
+  
+  return (data === 'none') 
+    ? '' 
+    : `![GitHub License](${badgeLink})`
 }
 
 
@@ -93,4 +125,5 @@ module.exports = {
   markdown: generateMarkdown,
   questions: generateQuestions,
   contents: generateTableOfContents,
+  licenseBadge: generateLicenseBadge,
 }
