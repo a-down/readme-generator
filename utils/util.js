@@ -70,6 +70,20 @@ function generateMarkdown(title, data) {
 }
 
 
+// function to generate license section and license link
+function generateLicenseLink(title, data) {
+  let licenseLink
+  if (data === 'MIT'){licenseLink = 'https://img.shields.io/badge/License-MIT-yellow.svg'}
+  if (data === 'Apache'){licenseLink = 'https://img.shields.io/badge/License-Apache_2.0-blue.svg'}
+  if (data === 'The Unlicense'){licenseLink = 'https://img.shields.io/badge/license-Unlicense-blue.svg'}
+  if (data === 'Creative Commons Zero'){licenseLink = 'https://licensebuttons.net/l/zero/1.0/80x15.png'}
+
+  return (data === 'none') 
+    ? '' 
+    : `${title}\nI am using the [${data} License](${licenseLink})`
+}
+
+
 
 // function to generate table of contents markdown
 function generateTableOfContents(data) {
@@ -127,4 +141,5 @@ module.exports = {
   questions: generateQuestions,
   contents: generateTableOfContents,
   licenseBadge: generateLicenseBadge,
+  licenseLink: generateLicenseLink,
 }

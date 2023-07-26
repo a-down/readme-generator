@@ -39,7 +39,7 @@ ${util.markdown('## Description', data.projectDescription)}
 ${util.contents('## Table of Contents', data)}
 ${util.markdown('## Installation', data.projectInstallation)}
 ${util.markdown('## Usage', data.projectUsage)}
-${util.markdown('## License', data.projectLicense)}
+${util.licenseLink('## License', data.projectLicense)}
 ${util.markdown('## Contributions', data.projectContributions)}
 ${util.markdown('## Tests', data.projectTests)}
 ${util.questions('## Questions', data.projectGitHub, data.projectEmail)}

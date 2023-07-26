@@ -1,8 +1,8 @@
-# f
+# rory
 
-![GitHub License](https://licensebuttons.net/l/zero/1.0/80x15.png)
+![GitHub License](https://img.shields.io/badge/license-Unlicense-blue.svg)
 ## Description
-f
+rory
 
 ## Table of Contents 
 [Description](#description)
@@ -20,21 +20,20 @@ f
 [Questions](#questions)
 
 ## Installation
-f
+rory
 
 ## Usage
-f
+rory
 
 ## License
-CC0
-
+I am using the [The Unlicense License](https://img.shields.io/badge/license-Unlicense-blue.svg)
 ## Contributions
-f
+rory
 
 ## Tests
-f
+rory
 
 ## Questions
-Please visit [https://github.com/f](https://github.com/f) for my GitHub profile.
+Please visit [https://github.com/rory](https://github.com/rory) for my GitHub profile.
     
-Please contact me at [f](f) if you have any questions about the application.
+Please contact me at [rory](rory) if you have any questions about the application.
