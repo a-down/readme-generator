@@ -21,17 +21,34 @@ function testRequire() {
 // TODO: Create a function to generate markdown for README
 // functions that generate read 
 function generateTitle(data) {
-  if (data.projectTitle === '') {
+  if (data === '') {
     return ''
   } else {
-  return `# ${data.projectTitle}\n`;
+  return `# ${data}\n`;
 }}
 
-function generateMarkdown(hash, data) {
+function generateMarkdown(title, data) {
   if (data === '') {
     return ''
    } else { 
-    return `${hash} ${data}`
+    return `${title}
+
+${data}
+`
+}}
+
+function generateQuestions(title, data, data2) {
+  if (data === '' && data2 === '') {
+    return ''
+  } else if (data ==! '' && data2 === ''){ 
+    return `Please visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.`
+  } else if (data === '' && data2 !== ''){
+    return `Please contact me at [${data2}](${data2}) if you have any questions about the application.`
+  } else {
+    `Please visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.
+    
+Please contact me at [${data2}](${data2}) if you have any questions about the application.`
+
 }}
 
 function testRequire() {

@@ -1,6 +1,8 @@
-# Roryrory
+# Rory
 
 ## Description
+
+Rory is the best
 
 
 ## Table of Contents
@@ -20,21 +22,21 @@
 [Questions](#questions)
 
 ## Installation
-
+cmd
 
 ## Usage
-
+usage
 
 ## License
 MIT
 
 ## Contributing
-
+contribute
 
 ## Tests
-
+test
 
 ## Questions
-Please visit [https://github.com/](https://github.com/) for my GitHub profile.
+Please visit [https://github.com/a-down](https://github.com/a-down) for my GitHub profile.
 
-Please contact me at []() if you have any questions about the application.
+Please contact me at [alec@email.com](alec@email.com) if you have any questions about the application.

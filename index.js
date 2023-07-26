@@ -47,11 +47,8 @@ function createReadmeContent(data) {
   // creates variable with content for the readme
   const readmeContent = 
 
-`${util.markdown('#', data.projectTitle)}
-
-## Description
-${projectDescription}
-
+`${util.title(data.projectTitle)}
+${util.markdown('## Description', data.projectDescription)}
 ## Table of Contents
 
 [Description](#description)
@@ -68,21 +65,12 @@ ${projectDescription}
 
 [Questions](#questions)
 
-## Installation
-${projectInstallation}
-
-## Usage
-${projectUsage}
-
-## License
-${projectLicense}
-
-## Contributing
-${projectContributions}
-
-## Tests
-${projectTests}
-
+${util.markdown('## Installation', data.projectInstallation)}
+${util.markdown('## Usage', projectUsage)}
+${util.markdown('## License', projectLicense)}
+${util.markdown('## Contributions', projectContributions)}
+${util.markdown('## Tests', projectTests)}
+${util.markdown('## Questions', project)}
 ## Questions
 Please visit [https://github.com/${projectGitHub}](https://github.com/${projectGitHub}) for my GitHub profile.
 
