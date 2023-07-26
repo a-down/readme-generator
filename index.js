@@ -30,32 +30,18 @@ function start() {
 // function to create Readme content from the inquirer prompts (called above)
 function createReadmeContent(data) {
 
-  // creating variables to use in readme content
-  const {
-    projectTitle, 
-    projectDescription, 
-    projectInstallation, 
-    projectUsage, 
-    projectContributions, 
-    projectTests, 
-    projectLicense, 
-    projectGitHub, 
-    projectEmail
-  } = data;
-  console.log(projectTitle)
-
   // creates variable with content for the readme
   const readmeContent = 
 
 `${util.title(data.projectTitle)}
-${util.markdown('## Description', projectDescription)}
+${util.markdown('## Description', data.projectDescription)}
 ${util.contents('## Table of Contents', data)}
-${util.markdown('## Installation', projectInstallation)}
-${util.markdown('## Usage', projectUsage)}
-${util.markdown('## License', projectLicense)}
-${util.markdown('## Contributions', projectContributions)}
-${util.markdown('## Tests', projectTests)}
-${util.questions('## Questions', projectGitHub, projectEmail)}
+${util.markdown('## Installation', data.projectInstallation)}
+${util.markdown('## Usage', data.projectUsage)}
+${util.markdown('## License', data.projectLicense)}
+${util.markdown('## Contributions', data.projectContributions)}
+${util.markdown('## Tests', data.projectTests)}
+${util.questions('## Questions', data.projectGitHub, data.projectEmail)}
 `
 
   // runs writeToFile function to the name of 'README.md with readmeContent from above 

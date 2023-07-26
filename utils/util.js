@@ -54,11 +54,11 @@ function generateTableOfContents(data) {
 
   // turn the array into a string
   console.log(array)
-  const string = array.join(' ')
+  const string = array.join('')
   console.log(string)
 
   // return the string to index.js
-  return `## Table of Contents \n ${string}`
+  return `## Table of Contents \n${string}`
 }
 
 
