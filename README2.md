@@ -1,39 +1,39 @@
-# rory
+# oreo
 
 ## Description
-rory
+oreo
 
 ## Table of Contents 
-[Description](#Description)
+[Description](#description)
  
-[Installation](#Installation)
+[Installation](#dnstallation)
  
-[Usage](#Usage)
+[Usage](#usage)
  
-[Contributions](#Contributions)
+[Contributions](#contributions)
  
-[Tests](#Tests)
+[Tests](#tests)
  
-[License](#License)
+[License](#license)
  
-[Questions](#Questions)
+[Questions](#questions)
 
 ## Installation
-rory
+oreo
 
 ## Usage
-rory
+oreo
 
 ## License
 Mozilla Public License 2.0
 
 ## Contributions
-rory
+oreo
 
 ## Tests
-rory
+oreo
 
 ## Questions
-Please visit [https://github.com/rory](https://github.com/rory) for my GitHub profile.
+Please visit [https://github.com/oreo](https://github.com/oreo) for my GitHub profile.
     
-Please contact me at [rory](rory) if you have any questions about the application.
+Please contact me at [oreo](oreo) if you have any questions about the application.

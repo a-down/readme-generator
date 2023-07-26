@@ -44,13 +44,13 @@ function generateTableOfContents(data) {
   const array = []
 
   // push the sections that are needed in the readme into an array
-  if (data.projectDescription !== ''){array.push('[Description](#Description)\n \n')}
-  if (data.projectInstallation !== ''){array.push('[Installation](#Installation)\n \n')}
-  if (data.projectUsage !== ''){array.push('[Usage](#Usage)\n \n')}
-  if (data.projectContributions !== ''){array.push('[Contributions](#Contributions)\n \n')}
-  if (data.projectTests !== ''){array.push('[Tests](#Tests)\n \n')}
-  if (data.projectLicense !== ''){array.push('[License](#License)\n \n')}
-  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#Questions)\n')}
+  if (data.projectDescription !== ''){array.push('[Description](#description)\n \n')}
+  if (data.projectInstallation !== ''){array.push('[Installation](#installation)\n \n')}
+  if (data.projectUsage !== ''){array.push('[Usage](#usage)\n \n')}
+  if (data.projectContributions !== ''){array.push('[Contributions](#contributions)\n \n')}
+  if (data.projectTests !== ''){array.push('[Tests](#tests)\n \n')}
+  if (data.projectLicense !== ''){array.push('[License](#license)\n \n')}
+  if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#questions)\n')}
 
   // turn the array into a string
   console.log(array)
