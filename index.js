@@ -1,78 +1,15 @@
-
-// Next Steps
-// Licenses (ask Gary about)
-// Extra Prompts
-  // file location of visual
-  // deployed link
-
-// Ask Questions
-
-
-
-
-
-
-
-
-
-
-
-
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
+const util = require('./utils/util')
+const questions = require('./utils/questions')
+
+console.log(questions.questions)
 
 
 
 // TODO: Create an array of questions for user input
-const questions = [
-  {
-    type: 'input',
-    message: 'What is your project title?',
-    name: 'projectTitle',
-  },
-  {
-    type: 'input',
-    message: 'Enter your project description.',
-    name: 'projectDescription',
-  },
-  {
-    type: 'input',
-    message: 'Enter installation directions for the application.',
-    name: 'projectInstallation',
-  },
-  {
-    type: 'input',
-    message: 'Enter usage information for the application.',
-    name: 'projectUsage',
-  },
-  {
-    type: 'input',
-    message: 'Enter directions for others to contribute to your project.',
-    name: 'projectContributions',
-  },
-  {
-    type: 'input',
-    message: 'Provide directions on how to test the application.',
-    name: 'projectTests',
-  },
-  {
-    type: 'list',
-    message: 'Please select the license you used for the project.',
-    name: 'projectLicense',
-    choices: ['MIT', 'Apache', 'The Unlicense', 'Creative COmmons Zero', 'Mozilla Public License 2.0'],
-  },
-  {
-    type: 'input',
-    message: 'Enter your GitHub username.',
-    name: 'projectGitHub',
-  },
-  {
-    type: 'input',
-    message: 'Enter your email.',
-    name: 'projectEmail',
-  }
-];
+// in questions.js in util folder
 
 
 
@@ -80,8 +17,9 @@ const questions = [
 // function is called with the prompt inside the init() function
 function start() {
   inquirer
-    .prompt(questions)
+    .prompt(questions.questions)
     .then((responses) => {
+      util.testRequire();
       console.log(responses)
       createReadmeContent(responses)
     });
@@ -109,7 +47,7 @@ function createReadmeContent(data) {
   // creates variable with content for the readme
   const readmeContent = 
 
-`# ${projectTitle}
+`${util.title(data)}
 
 ## Description
 ${projectDescription}

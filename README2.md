@@ -1,4 +1,3 @@
-# Rory
 
 ## Description
 
