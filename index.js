@@ -47,7 +47,7 @@ function createReadmeContent(data) {
   // creates variable with content for the readme
   const readmeContent = 
 
-`${util.title(data)}
+`${util.markdown('#', data.projectTitle)}
 
 ## Description
 ${projectDescription}

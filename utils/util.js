@@ -10,12 +10,28 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+
+
+// tests the dependency
+function testRequire() {
+  console.log('it works!!!')
+}
+
+
 // TODO: Create a function to generate markdown for README
+// functions that generate read 
 function generateTitle(data) {
   if (data.projectTitle === '') {
     return ''
   } else {
   return `# ${data.projectTitle}\n`;
+}}
+
+function generateMarkdown(hash, data) {
+  if (data === '') {
+    return ''
+   } else { 
+    return `${hash} ${data}`
 }}
 
 function testRequire() {
@@ -24,5 +40,17 @@ function testRequire() {
 
 module.exports = {
   title: generateTitle,
-  testRequire: testRequire
+  testRequire: testRequire,
+  markdown: generateMarkdown,
 }
+
+
+    // projectTitle
+    // projectDescription, 
+    // projectInstallation, 
+    // projectUsage, 
+    // projectContributions, 
+    // projectTests, 
+    // projectLicense, 
+    // projectGitHub, 
+    // projectEmail
