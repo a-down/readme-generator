@@ -48,7 +48,7 @@ function createReadmeContent(data) {
   const readmeContent = 
 
 `${util.title(data.projectTitle)}
-${util.markdown('## Description', data.projectDescription)}
+${util.markdown('## Description', projectDescription)}
 ## Table of Contents
 
 [Description](#description)
@@ -65,16 +65,12 @@ ${util.markdown('## Description', data.projectDescription)}
 
 [Questions](#questions)
 
-${util.markdown('## Installation', data.projectInstallation)}
+${util.markdown('## Installation', projectInstallation)}
 ${util.markdown('## Usage', projectUsage)}
 ${util.markdown('## License', projectLicense)}
 ${util.markdown('## Contributions', projectContributions)}
 ${util.markdown('## Tests', projectTests)}
-${util.markdown('## Questions', project)}
-## Questions
-Please visit [https://github.com/${projectGitHub}](https://github.com/${projectGitHub}) for my GitHub profile.
-
-Please contact me at [${projectEmail}](${projectEmail}) if you have any questions about the application.
+${util.questions('## Questions', projectGitHub, projectEmail)}
 `
 
   // runs writeToFile function to the name of 'README.md with readmeContent from above 

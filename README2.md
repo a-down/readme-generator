@@ -1,9 +1,7 @@
 # Rory
 
 ## Description
-
-Rory is the best
-
+dog
 
 ## Table of Contents
 
@@ -25,18 +23,18 @@ Rory is the best
 cmd
 
 ## Usage
-usage
+use
 
 ## License
-MIT
+Creative COmmons Zero
 
-## Contributing
-contribute
+## Contributions
+no
 
 ## Tests
-test
+npm test
 
 ## Questions
 Please visit [https://github.com/a-down](https://github.com/a-down) for my GitHub profile.
-
+    
 Please contact me at [alec@email.com](alec@email.com) if you have any questions about the application.

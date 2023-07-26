@@ -32,7 +32,6 @@ function generateMarkdown(title, data) {
     return ''
    } else { 
     return `${title}
-
 ${data}
 `
 }}
@@ -41,11 +40,11 @@ function generateQuestions(title, data, data2) {
   if (data === '' && data2 === '') {
     return ''
   } else if (data ==! '' && data2 === ''){ 
-    return `Please visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.`
+    return `${title}\nPlease visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.`
   } else if (data === '' && data2 !== ''){
-    return `Please contact me at [${data2}](${data2}) if you have any questions about the application.`
+    return `${title}\nPlease contact me at [${data2}](${data2}) if you have any questions about the application.`
   } else {
-    `Please visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.
+    return `${title}\nPlease visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.
     
 Please contact me at [${data2}](${data2}) if you have any questions about the application.`
 
@@ -59,6 +58,7 @@ module.exports = {
   title: generateTitle,
   testRequire: testRequire,
   markdown: generateMarkdown,
+  questions: generateQuestions,
 }
 
 
