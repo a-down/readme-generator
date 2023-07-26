@@ -18,25 +18,24 @@ function testRequire() {
 }
 
 
+
 // TODO: Create a function to generate markdown for README
-// functions that generate read 
+// functions to generate title section of markdown
 function generateTitle(data) {
-  if (data === '') {
-    return ''
-  } else {
-  return `# ${data}\n`;
-}}
+  return (
+    (data === '') ? '' : `# ${data}\n`
+    )
+}
 
 
-// function to generate regular markdown sections
+
+// function to generate most markdown sections
 function generateMarkdown(title, data) {
-  if (data === '') {
-    return ''
-   } else { 
-    return `${title}
-${data}
-`
-}}
+  return (
+    (data === '') ? '' : `${title}\n${data}`
+    )
+}
+
 
 
 // function to generate table of contents markdown
@@ -44,6 +43,7 @@ function generateTableOfContents(data) {
   console.log(data)
   const array = []
 
+  // push the sections that are needed in the readme into an array
   if (data.projectDescription !== ''){array.push('[Description](#Description)\n \n')}
   if (data.projectInstallation !== ''){array.push('[Installation](#Installation)\n \n')}
   if (data.projectUsage !== ''){array.push('[Usage](#Usage)\n \n')}
@@ -52,41 +52,14 @@ function generateTableOfContents(data) {
   if (data.projectLicense !== ''){array.push('[License](#License)\n \n')}
   if (data.projectGitHub !== '' || data.projectEmail !== ''){array.push('[Questions](#Questions)\n \n')}
 
+  // turn the array into a string
   console.log(array)
   const string = array.join(' ')
   console.log(string)
 
+  // return the string to index.js
   return `## Table of Contents \n ${string}`
 }
-
-
-// projectTitle, 
-// projectDescription, 
-// projectInstallation, 
-// projectUsage, 
-// projectContributions, 
-// projectTests, 
-// projectLicense, 
-// projectGitHub, 
-// projectEmail
-
-
-// ## Table of Contents
-
-// [Description](#description)
-
-// [Installation](#installation)
-
-// [Usage](#usage)
-
-// [License](#license)
-
-// [Contributing](#contributing)
-
-// [Tests](#tests)
-
-// [Questions](#questions)
-
 
 
 
@@ -105,10 +78,15 @@ Please contact me at [${data2}](${data2}) if you have any questions about the ap
 }}
 
 
+
+// function used to test dependency
 function testRequire() {
   console.log('it works!!!')
 }
 
+
+
+// exporting functions to index.js
 module.exports = {
   title: generateTitle,
   testRequire: testRequire,
@@ -116,14 +94,3 @@ module.exports = {
   questions: generateQuestions,
   contents: generateTableOfContents,
 }
-
-
-    // projectTitle
-    // projectDescription, 
-    // projectInstallation, 
-    // projectUsage, 
-    // projectContributions, 
-    // projectTests, 
-    // projectLicense, 
-    // projectGitHub, 
-    // projectEmail
