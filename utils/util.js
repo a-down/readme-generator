@@ -1,21 +1,7 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-
-
 // tests the dependency
-function testRequire() {
-  console.log('it works!!!')
-}
+// function testRequire() {
+//   console.log('it works!!!')
+// }
 
 
 
@@ -69,7 +55,7 @@ function generateLicenseLink(title, data) {
 
 // function to generate table of contents markdown
 function generateTableOfContents(data) {
-  console.log(data)
+  // console.log(data)
   const arr = []
 
   // push the sections that are needed in the readme into an array
@@ -83,9 +69,9 @@ function generateTableOfContents(data) {
   if (data.projectGitHub !== '' || data.projectEmail !== '') {arr.push('[Questions](#questions)\n')};
 
   // turn the array into a string
-  console.log(arr)
+  // console.log(arr)
   const string = arr.join('')
-  console.log(string)
+  // console.log(string)
 
   // return the string to index.js
   return `## Table of Contents \n${string}`
@@ -106,13 +92,6 @@ function generateQuestions(title, data, data2) {
     
 Please contact me at [${data2}](${data2}) if you have any questions about the application.`
 }}
-
-
-
-// function used to test dependency
-function testRequire() {
-  console.log('it works!!!')
-}
 
 
 
