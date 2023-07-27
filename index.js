@@ -33,6 +33,7 @@ function createReadmeContent(data) {
   const readmeContent = 
 
   // function for each section of the README
+    // not indented keep formatting in the readme correct
 `${util.title(data.projectTitle)}
 ${util.licenseBadge(data.projectLicense)}
 ${util.markdown('## Description', data.projectDescription)}
