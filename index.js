@@ -39,12 +39,12 @@ ${util.contents(data)}
 ${util.markdown('## Installation', data.projectInstallation)}
 ${util.markdown('## Usage', data.projectUsage)}
 ${util.licenseLink('## License', data.projectLicense)}
-${util.markdown('## Contributions', data.projectContributions)}
+${util.markdown('## Contributing', data.projectContributions)}
 ${util.markdown('## Tests', data.projectTests)}
 ${util.questions('## Questions', data.projectGitHub, data.projectEmail)}`
 
   // runs writeToFile function to the name of 'README.md with readmeContent from above 
-  writeToFile('README2.md', `${readmeContent}`)
+  writeToFile('sample-README.md', `${readmeContent}`)
   }
 
 

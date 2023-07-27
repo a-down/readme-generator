@@ -86,7 +86,7 @@ function generateQuestions(title, data, data2) {
   } else if (data ==! '' && data2 === ''){ 
     return `${title}\nPlease visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.`
   } else if (data === '' && data2 !== ''){
-    return `${title}\nPlease contact me at [${data2}](${data2}) if you have any questions about the application.`
+    return `${title}\nPlease contact me at [${data2}](${data2}) if you have any questions or issues concerning the application.`
   } else {
     return `${title}\nPlease visit [https://github.com/${data}](https://github.com/${data}) for my GitHub profile.
     
