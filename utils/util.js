@@ -25,7 +25,7 @@ function generateLicenseBadge(data) {
   
   return (data === 'none') 
     ? '' 
-    : `![GitHub License](${badgeLink})`
+    : `![GitHub License](${badgeLink})\n`
 }
 
 
