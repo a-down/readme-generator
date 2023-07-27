@@ -64,7 +64,7 @@ function generateTableOfContents(data) {
   if (data.projectInstallation !== '') {arr.push('[Installation](#installation)\n \n')};
   if (data.projectLicense !== '') {arr.push('[License](#license)\n \n')};
   if (data.projectUsage !== '') {arr.push('[Usage](#usage)\n \n')};
-  if (data.projectContributions !== '') {arr.push('[Contributions](#contributions)\n \n')};
+  if (data.projectContributions !== '') {arr.push('[Contributing](#contributing)\n \n')};
   if (data.projectTests !== '') {arr.push('[Tests](#tests)\n \n')};
   if (data.projectGitHub !== '' || data.projectEmail !== '') {arr.push('[Questions](#questions)\n')};
 
