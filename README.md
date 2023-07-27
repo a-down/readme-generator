@@ -18,9 +18,6 @@ To use the README Generator, you will need to follow these instructions:
   ```
   npm install
   ```
-  ```
-  npm install inquirer@8.2.4
-  ```
 
 ## Usage
 
