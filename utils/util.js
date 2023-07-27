@@ -48,7 +48,7 @@ function generateLicenseLink(title, data) {
 
   return (data === 'none') 
     ? '' 
-    : `${title}\nI am using the [${data}](${licenseLink}) License.`
+    : `${title}\nI am using the [${data}](${licenseLink}) License.\n`
 }
 
 
@@ -62,8 +62,8 @@ function generateTableOfContents(data) {
   // console.log(data.projectDescription)
   if (data.projectDescription !== '') {arr.push('[Description](#description)\n \n')}
   if (data.projectInstallation !== '') {arr.push('[Installation](#installation)\n \n')};
-  if (data.projectLicense !== '') {arr.push('[License](#license)\n \n')};
   if (data.projectUsage !== '') {arr.push('[Usage](#usage)\n \n')};
+  if (data.projectLicense !== '') {arr.push('[License](#license)\n \n')};
   if (data.projectContributions !== '') {arr.push('[Contributing](#contributing)\n \n')};
   if (data.projectTests !== '') {arr.push('[Tests](#tests)\n \n')};
   if (data.projectGitHub !== '' || data.projectEmail !== '') {arr.push('[Questions](#questions)\n')};
