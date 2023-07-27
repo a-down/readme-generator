@@ -57,7 +57,7 @@ function generateLicenseLink(title, data) {
   let licenseLink
   if (data === 'MIT'){licenseLink = 'https://opensource.org/licenses/MIT'}
   if (data === 'Apache'){licenseLink = 'https://opensource.org/licenses/Apache-2.0'}
-  if (data === 'The Unlicense'){licenseLink = 'http://unlicense.org/'}
+  if (data === 'The Unlicense'){licenseLink = 'https://choosealicense.com/licenses/unlicense/'}
   if (data === 'Creative Commons Zero'){licenseLink = 'http://creativecommons.org/publicdomain/zero/1.0/'}
 
   return (data === 'none') 
