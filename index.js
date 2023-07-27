@@ -32,6 +32,7 @@ function createReadmeContent(data) {
   // creates variable with content for the readme
   const readmeContent = 
 
+  // function for each section of the README
 `${util.title(data.projectTitle)}
 ${util.licenseBadge(data.projectLicense)}
 ${util.markdown('## Description', data.projectDescription)}
