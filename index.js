@@ -36,7 +36,7 @@ function createReadmeContent(data) {
 `${util.title(data.projectTitle)}
 ${util.licenseBadge(data.projectLicense)}
 ${util.markdown('## Description', data.projectDescription)}
-${util.contents('## Table of Contents', data)}
+${util.contents(data)}
 ${util.markdown('## Installation', data.projectInstallation)}
 ${util.markdown('## Usage', data.projectUsage)}
 ${util.licenseLink('## License', data.projectLicense)}

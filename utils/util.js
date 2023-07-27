@@ -19,24 +19,6 @@ function testRequire() {
 
 
 
-const licenseBadges = {
-  MIT: 'https://img.shields.io/badge/License-MIT-yellow.svg',
-  Apache: {
-    link: 'https://opensource.org/licenses/Apache-2.0',
-    badge: 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
-  },
-  Unlicense: {
-    link: 'http://unlicense.org/',
-    badge: 'https://img.shields.io/badge/license-Unlicense-blue.svg',
-  },
-  CC0: {
-    link: 'http://creativecommons.org/publicdomain/zero/1.0/',
-    badge: 'https://licensebuttons.net/l/zero/1.0/80x15.png',
-  },
-}
-
-
-
 // TODO: Create a function to generate markdown for README
 // function to generate title section of markdown
 function generateTitle(data) {
@@ -91,13 +73,14 @@ function generateTableOfContents(data) {
   const arr = []
 
   // push the sections that are needed in the readme into an array
-  if (data.projectDescription !== ''){arr.push('[Description](#description)\n \n')}
-  if (data.projectInstallation !== ''){arr.push('[Installation](#installation)\n \n')}
-  if (data.projectLicense !== ''){arr.push('[License](#license)\n \n')}
-  if (data.projectUsage !== ''){arr.push('[Usage](#usage)\n \n')}
-  if (data.projectContributions !== ''){arr.push('[Contributions](#contributions)\n \n')}
-  if (data.projectTests !== ''){arr.push('[Tests](#tests)\n \n')}
-  if (data.projectGitHub !== '' || data.projectEmail !== ''){arr.push('[Questions](#questions)\n')}
+  console.log(data.projectDescription)
+  if (data.projectDescription !== '') {arr.push('[Description](#description)\n \n')}
+  if (data.projectInstallation !== '') {arr.push('[Installation](#installation)\n \n')};
+  if (data.projectLicense !== '') {arr.push('[License](#license)\n \n')};
+  if (data.projectUsage !== '') {arr.push('[Usage](#usage)\n \n')};
+  if (data.projectContributions !== '') {arr.push('[Contributions](#contributions)\n \n')};
+  if (data.projectTests !== '') {arr.push('[Tests](#tests)\n \n')};
+  if (data.projectGitHub !== '' || data.projectEmail !== '') {arr.push('[Questions](#questions)\n')};
 
   // turn the array into a string
   console.log(arr)
