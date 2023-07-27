@@ -24,13 +24,16 @@ To use the README Generator, you will need to follow these instructions:
 
 ## Usage
 
-To start the README Generator, run: 
+- To start the README Generator, run: 
 
   ```
   node index.js
   ``` 
 
-in the command line.
+  in the command line.
+
+- If you choose not to answer a prompt in the terminal, that section will not be rendered in the generated README.
+
 
 ## Visual Example of Generated README
 
