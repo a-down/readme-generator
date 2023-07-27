@@ -19,7 +19,6 @@ function start() {
   inquirer
     .prompt(questions.questions)
     .then((responses) => {
-      util.testRequire();
       // console.log(responses)
       createReadmeContent(responses)
     });

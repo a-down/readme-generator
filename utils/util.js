@@ -59,7 +59,7 @@ function generateTableOfContents(data) {
   const arr = []
 
   // push the sections that are needed in the readme into an array
-  console.log(data.projectDescription)
+  // console.log(data.projectDescription)
   if (data.projectDescription !== '') {arr.push('[Description](#description)\n \n')}
   if (data.projectInstallation !== '') {arr.push('[Installation](#installation)\n \n')};
   if (data.projectLicense !== '') {arr.push('[License](#license)\n \n')};
@@ -98,7 +98,7 @@ Please contact me at [${data2}](${data2}) if you have any questions about the ap
 // exporting functions to index.js
 module.exports = {
   title: generateTitle,
-  testRequire: testRequire,
+  // testRequire: testRequire,
   markdown: generateMarkdown,
   questions: generateQuestions,
   contents: generateTableOfContents,

@@ -1,39 +1,31 @@
-# Rory
+# Weather Dashboard
 
-![GitHub License](https://img.shields.io/badge/license-Unlicense-blue.svg)
+![GitHub License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 ## Description
-Rory is the best dog.
+The weather dashboard can be used to see the current weather for a city and a 5 day forecast for that city. Search history is saved.
 
 ## Table of Contents 
 [Description](#description)
- 
-[Installation](#installation)
  
 [License](#license)
  
 [Usage](#usage)
  
-[Contributions](#contributions)
- 
 [Tests](#tests)
  
 [Questions](#questions)
 
-## Installation
-node index.js
 
 ## Usage
-Respond to prompts in the terminal.
+Search for a city with the input field. To use the search history, click on the name of a previous search beflow the input field.
 
 ## License
-I am using the [The Unlicense](http://unlicense.org/) License.
-## Contributions
-Do not!
+I am using the [Apache](https://opensource.org/licenses/Apache-2.0) License.
 
 ## Tests
-npm test
+Open the developer console to check status.
 
 ## Questions
 Please visit [https://github.com/a-down](https://github.com/a-down) for my GitHub profile.
     
-Please contact me at [alec@email.com](alec@email.com) if you have any questions about the application.
+Please contact me at [a-down@email.com](a-down@email.com) if you have any questions about the application.
