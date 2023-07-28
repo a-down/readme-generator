@@ -40,4 +40,4 @@ To use the README Generator, you will need to follow these instructions:
 
 ## Video Demo
 
-[Link to Demo Video](https://watch.screencastify.com/v/u4xjKFBazWEmVx1MxotT)
+[Link to Demo Video](https://watch.screencastify.com/v/hPJyEDkaJLzXtV9GmHVj)
