@@ -34,7 +34,7 @@ To use the README Generator, you will need to follow these instructions:
 
 ## Visual Example of Generated README
 
-![Visual of Deployed Webpage](./demo-readme-visual.png)
+![Visual of Generated README](./demo-readme-visual.png)
 
 <br>
 
